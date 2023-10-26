@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas</title>
+    <style>
+        .espaco{
+            height: 2000px;
+        }
+    </style>
+</head>
+<body>
+    
+    <a href="#texto" id="titulo">texto</a>
+    <div class="espaco">
+
+    </div>
+    <p id="texto">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus laborum ullam dolore praesentium, animi in quo, dolores, fugiat laudantium aliquam officiis aliquid qui? Perferendis nemo rerum ullam. Culpa, maiores ratione.
+    </p>
+
+
+    <div class="form">
+        <input type="number" name="" id="n1">
+        +
+        <input type="number" name="" id="n2">
+        <p id="resultado"></p>
+        <input style="cursor: pointer;" type="button" name="" value="resultado" id="btn" onclick="somar()">
+    </div>
+
+    <script>
+        function somar() {
+
+            n1 = Number(document.querySelector('#n1').value)
+            n2 = Number(document.querySelector('#n2').value)
+
+            let resultado = (n1 + n2)
+
+            document.querySelector('#resultado').innerHTML = resultado
+
+
+            /*
+            let cor = document.getElementById('cor').value
+            document.getElementById('tipo').type = cor
+            document.get
+            
+            document.body.style.background = cor
+            console.log(cor)
+            */
+        }
+    </script>
+</body>
+</html>
