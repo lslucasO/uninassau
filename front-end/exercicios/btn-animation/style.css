@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container-background-circle{
+    margin: auto;
+    cursor: pointer;
+    border-radius: 30px;
+    height: 30px;
+    width: 70px;
+    background-color: gray;
+    overflow: hidden;
+}
+
+.background{
+    transition: all 0.4s;
+    width: 0px;
+    height: 30px;
+    background: yellowgreen;
+    border-radius: 30px;
+}
+
+.circle{
+    transition: all 0.4s;
+    position: relative;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+}
